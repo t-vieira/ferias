@@ -1,0 +1,214 @@
+/* 
+    Document   : style
+    Created on : 26/08/2010, 21:07:48
+    Author     : tiago
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+/* ESTILOS GERAIS */
+#centro {
+    padding: 10px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin: -200px;
+    background: #fafafa;
+}
+
+body {
+    font-family: Verdana, Tahoma, Arial;
+    font-size: 13px;
+}
+
+/* ESTILOS DO MENU LATERAL*/
+#container {
+    width: 100%;
+}
+
+#conteudo {
+    width:100%;
+}
+
+#menu {
+    width: 100%;
+    float: left;
+}
+#menu a:link {
+    text-decoration:none;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    padding-left: 15px;
+    background-image: url(img/bt_menu.png);
+    background-repeat: no-repeat;
+}
+#menu a:hover {
+    color: #000;
+    padding-left: 15px;
+    background-image: url(img/bt_menu_over.png);
+    background-repeat: no-repeat;
+}
+#menu a:visited {
+    text-decoration:none;
+    font-weight: bold;
+    color: #333;
+    font-size: 12px;
+    padding-left: 15px;
+    background-image: url(img/bt_menu.png);
+    background-repeat: no-repeat;
+}
+#menu a:visited:hover {
+    color: #000;
+    padding-left: 15px;
+    background-image: url(img/bt_menu_over.png);
+    background-repeat: no-repeat;
+}
+#menu h4 {
+    color: darkslateblue;
+    font-size: 17px;
+    border-bottom: 1px solid #ccc;
+}
+#menu h4.cadastro {
+    padding-left: 35px;
+    background-image: url(img/ico_cadastro.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+#menu h4.controle {
+    padding-left: 35px;
+    background-image: url(img/ico_controle.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+#menu h4.relatorio {
+    padding-left: 35px;
+    background-image: url(img/ico_relatorio.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+#menu h4.editar {
+    padding-left: 35px;
+    background-image: url(img/ico_editar.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+#menu h4.inativo {
+    padding-left: 35px;
+    background-image: url(img/ico_inativos.png);
+    background-repeat: no-repeat;
+    padding-bottom: 10px;
+}
+
+/* ESTILOS DO FORMULÁRIO*/
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #0066ff;
+    text-shadow: #fafafa 1px 1px 1px;
+    background-color: #ccccff;
+    padding: 5px 5px 5px 5px;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333;
+    border-top: 1px solid #333;
+}
+label {
+    font-size: 12px;
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+    width: 120px;
+
+}
+fieldset ol {
+    margin: 0;
+    padding: 0;
+}
+fieldset li {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+fieldset fieldset label {
+    display: block;
+    width: auto;
+}
+input{
+    font-family: Verdana, Tahoma, Arial;
+    font-size: 13px;
+    border-bottom: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+    background-color: #f5f5f5;
+
+}
+
+/* ESTILOS DOS AVISOS DE CADASTRADO COM SUCESSO OU ERRO NO CADASTRO */
+#aviso_erro {
+    float: left;
+    font-size: 11px;
+    color: red;
+    background-color: #ccccff;
+    background: url(img/ico_aviso_erro.png);
+    background-repeat: no-repeat;
+    padding: 0px 5px 5px 25px;
+    text-transform: uppercase;
+}
+#aviso_ok {
+    float: left;
+    font-size: 11px;
+    color: green;
+    background-color: #ccccff;
+    background: url(img/ico_aviso_ok.png);
+    background-repeat: no-repeat;
+    padding: 0px 5px 5px 25px;
+    text-transform: uppercase;
+}
+
+/* ESTILO DA TABELA DE VISUALIZAÇÃO DOS RESULTADOS*/
+#tabelalinhatitulo {
+    padding: 0;
+    clear: both;
+}
+#tabelacolunatitulo {
+    width:136px;
+    border: 1px solid #fff;
+    float: left;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Tahoma, Verdana;
+    padding: 3px 3px 3px 3px;
+}
+table th {
+    border: 1px solid #fff;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 3px 3px 3px;
+}
+table td{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-left: 2px dotted #ccc;
+    font-size: 10px;
+}
+
+/* ESTILO DA DIV QUE FICA ESCONDIDA PARA ALTERAR A DATA DE RECICLAGENS*/
+#alterardatarec {
+    position: absolute;
+    display: none;
+    height: 20px;
+}
